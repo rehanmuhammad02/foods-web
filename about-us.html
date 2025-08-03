@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodies Empire</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   <!-- GLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="about-us.css">
+  <link rel="icon" href="foods-web-logo.png">
+</head>
+<body>
+ <!-- Navbar -->
+  <nav class="navbar">
+    <h1 data-aos="fade-up"><i class="fas fa-utensils" data-aos="fade-down"></i>Foodies Empire</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links"  data-aos="zoom-in">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="order.html">Order Now</a></li>
+    </ul>
+  </nav>
+  <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+  }
+</script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 data-aos="fade-up">Your Hunger Stop!</h2>
+      <p data-aos="fade-down" id="heading">Freshly made burgers, sizzling pizzas & irresistible rolls — all in one place!</p>
+      <a href="menu.html">
+        <button>Explore Menu</button>
+      </a>
+    </div>
+  </section>
+  <!-- Script for Hamburger Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true      
+  });
+</script>
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="about.jpg" alt="About Our Food" class="img-fluid" data-aos="zoom-in">
+        </div>
+        <div class="col-md-6">
+          <h2 data-aos="zoom-in">About Us</h2>
+          <p data-aos="zoom-in"> 
+            We’re passionate about delicious food that makes you smile. From juicy burgers to cheesy pizzas and spicy rolls — every bite is packed with flavor and love.
+          </p>
+          <p data-aos="zoom-in">
+            Whether you're craving a quick snack or a full meal, we've got something for every appetite. Our chefs use only the freshest ingredients, cooked to perfection and delivered hot to your door.
+          </p>
+          <a href="menu.html" class="btn btn-warning mt-3" data-aos="zoom-in">Explore Our Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- reviews section -->
+   <section class="client-reviews">
+  <div class="container">
+    <h2 data-aos="fade-up">What Our Customers Say</h2>
+    <div class="review-cards">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <img src="review-1.jpg" alt="Client 1" data-aos="zoom-in">
+        <h4 data-aos="zoom-in">Ali Raza</h4>
+        <div class="stars" data-aos="zoom-in">★★★★★</div>
+        <p data-aos="zoom-in">The biryani was absolutely delicious! Full of flavor and perfectly cooked. Will order again.</p>
+      </div>
+      <!-- Review 2 -->
+      <div class="review-card">
+        <img src="review-2.jpg" alt="Client 2" data-aos="zoom-in">
+        <h4 data-aos="zoom-in">Sara Khan</h4>
+        <div class="stars" data-aos="zoom-in">★★★★☆</div>
+        <p data-aos="zoom-in">Excellent service and the cheese naan was heavenly. A bit spicy, but I loved it!</p>
+      </div>
+      <!-- Review 3 -->
+      <div class="review-card">
+        <img src="review-3.jpg" alt="Client 3" data-aos="zoom-in">
+        <h4 data-aos="zoom-in">John Smith</h4>
+        <div class="stars" data-aos="zoom-in">★★★★★</div>
+        <p data-aos="zoom-in">Probably the best chicken rolls I’ve had in town. Crispy, juicy, and very satisfying.</p>
+      </div>
+      <!-- Review 4 -->
+      <div class="review-card">
+        <img src="review-4.jpg" alt="Client 4" data-aos="zoom-in">
+        <h4 data-aos="zoom-in">Ayesha Malik</h4>
+        <div class="stars" data-aos="zoom-in">★★★★☆</div>
+        <p data-aos="zoom-in">I tried their BBQ platter and it was mouthwatering. Great presentation and taste!</p>
+      </div>
+      <!-- Review 5 -->
+      <div class="review-card">
+        <img src="review-5.jpg" alt="Client 5" data-aos="zoom-in">
+        <h4 data-aos="zoom-in">Usman Tariq</h4>
+        <div class="stars" data-aos="zoom-in">★★★★★</div>
+        <p data-aos="zoom-in">Superb flavors! The food reminds me of traditional street-style spices with hygiene. Recommended!</p>
+      </div>
+      <!-- Review 6 -->
+      <div class="review-card">
+        <img src="review-6.jpg" alt="Client 6" data-aos="zoom-in">
+        <h4 data-aos="zoom-in">Emily Rose</h4>
+        <div class="stars" data-aos="zoom-in">★★★★★</div>
+        <p data-aos="zoom-in">Loved their desserts, especially the chocolate lava cake. Perfect end to my meal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- chef's section -->
+ <!-- Our Chefs Section -->
+<section id="our-chefs">
+  <h2 data-aos="fade-up">Meet Our Chefs</h2>
+  <div class="chefs-grid">
+    <div class="chef-card">
+      <img src="Chef-1.jpg" alt="Chef Adeel" data-aos="zoom-in">
+      <h4 data-aos="zoom-in">Chef Adeel</h4>
+      <p data-aos="zoom-in">Expert in Desi Karhai & BBQ</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef-2.jpg" alt="Chef Maria" data-aos="zoom-in">
+      <h4 data-aos="zoom-in">Chef Maria</h4>
+      <p data-aos="zoom-in">Master of Italian Pastas</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef-3.jpg" alt="Chef Usman" data-aos="zoom-in">
+      <h4 data-aos="zoom-in">Chef Usman</h4>
+      <p data-aos="zoom-in">Snacks & Sides Specialist</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef-5.jpg" alt="Chef Ayesha" data-aos="zoom-in">
+      <h4 data-aos="zoom-in">Chef Ayesha</h4>
+      <p>Continental & Salad Expert</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef-4.jpg" alt="Chef Zain" data-aos="zoom-in">
+      <h4 data-aos="zoom-in">Chef Zain</h4>
+      <p>Rolls & Fast Food King</p>
+    </div>
+    <div class="chef-card">
+      <img src="chef-6.jpg" alt="Chef Rani" data-aos="zoom-in">
+      <h4 data-aos="zoom-in">Chef Rani</h4>
+      <p>Desserts & Cakes Queen</p>
+    </div>
+  </div>
+</section>
+<!-- book table -->
+ <section class="book-table-section" id="book-table">
+  <div class="container">
+    <div class="table-wrapper">
+      <!-- Left Side Content -->
+      <div class="table-info">
+        <h2 data-aos="zoom-in">Book A Table</h2>
+        <p data-aos="zoom-in">Choose from our variety of elegant seating options – perfect for romantic dinners, family get-togethers, or private celebrations.</p>
+        <ul class="table-types">
+          <li data-aos="zoom-in"><i class="fas fa-chair" data-aos="zoom-in"></i> Couple Table – Cozy setup for two</li>
+          <li data-aos="zoom-in"><i class="fas fa-users" data-aos="zoom-in"></i> Family Table – Seats up to 6 people</li>
+          <li data-aos="zoom-in"><i class="fas fa-tree" data-aos="zoom-in"></i> Outdoor Seating – Fresh open-air vibes</li>
+          <li data-aos="zoom-in"><i class="fas fa-door-closed" data-aos="zoom-in"></i> Private Cabin – Personal and quiet</li>
+          <li data-aos="zoom-in"><i class="fas fa-birthday-cake" data-aos="zoom-in"></i> Birthday Setup – Decorated for celebrations</li>
+          <li data-aos="zoom-in"><i class="fas fa-crown" data-aos="zoom-in"></i> VIP Lounge – Premium luxury seating</li>
+        </ul>
+      </div>
+      <!-- Right Side Form -->
+      <div class="booking-form" data-aos="zoom-in">
+        <h3 data-aos="zoom-in">Reserve Your Spot</h3>
+        <form>
+          <input type="text" placeholder="Full Name" required 
+                 pattern="[A-Za-z\s]{3,}" 
+                 title="Name must be at least 3 letters and only contain alphabets.">
+          <input type="tel" placeholder="Contact Number" required 
+                 pattern="[0-9]{11}" 
+                 title="Enter a valid 11-digit phone number (e.g., 03123456789)">
+          <input type="email" placeholder="Email Address" required 
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                 title="Enter a valid email address (e.g., example@mail.com)">
+          <input type="date" required title="Select booking date">
+          <input type="time" required title="Select booking time">
+          <select required title="Choose your preferred table type">
+            <option value="">Select Table Type</option>
+            <option value="couple">Couple Table</option>
+            <option value="family">Family Table</option>
+            <option value="outdoor">Outdoor Seating</option>
+            <option value="cabin">Private Cabin</option>
+            <option value="birthday">Birthday Setup</option>
+            <option value="vip">VIP Lounge</option>
+          </select>
+          <button type="submit" data-aos="zoom-in">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+  <footer class="custom-footer">
+  <div class="footer-columns">
+    <!-- About Section -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-utensils" data-aos="fade-down"></i> About Us</h4>
+    <p data-aos="fade-down">At Foodies Empire, we believe great food brings people together — that’s why we craft every dish with passion, freshness, and a touch of love to give you an unforgettable taste experience.</p>
+    </div>
+    <!-- Foods Info -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-utensils" data-aos="fade-down"></i> Our Specialties</h4>
+    <p data-aos="fade-down">Discover our chef’s handpicked specials — crafted with bold flavors, rich ingredients, and an unforgettable twist in every bite.</p>
+    </div>
+    <!-- Contact -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-phone" data-aos="fade-down"></i> Contact</h4>
+      <p data-aos="fade-down"><strong>Phone:</strong> +1 5589 55488 55</p>
+      <p data-aos="fade-down"><strong>Email:</strong> info@foodiesempire.com</p>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-envelope" data-aos="fade-down"></i> Newsletter</h4>
+      <p data-aos="fade-down">Get exclusive food updates:</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email" required data-aos="fade-down">
+        <button type="submit" data-aos="fade-down">Subscribe</button>
+      </form>
+    </div>
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down">Follow Us</h4>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-instagram" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-twitter" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-youtube" data-aos="fade-down"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom Footer Text -->
+  <div class="footer-bottom">
+    <p>© 2025 <strong>Foodies Empire</strong>. All Rights Reserved.</p>
+    <p>Providing joy through <span>authentic taste</span> and quality service.</p>
+  </div>
+</footer>
+<!-- Fixed Buttons -->
+<div class="fixed-buttons">
+  <a class="whatsapp-btn" href="https://wa.me/923001234567" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+  <button class="back-to-top hide-arrow" id="topBtn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+<script>
+  const topBtn = document.getElementById('topBtn');
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topBtn.classList.remove('hide-arrow');
+    } else {
+      topBtn.classList.add('hide-arrow');
+    }
+  };
+  topBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
