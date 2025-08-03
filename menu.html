@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodies Empire</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="icon" href="foods-web-logo.png">
+</head>
+<body>
+   <!-- Navbar -->
+  <nav class="navbar">
+    <h1 data-aos="fade-up"><i class="fas fa-utensils" data-aos="fade-down"></i>Foodies Empire</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links"  data-aos="zoom-in">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="order.html">Order Now</a></li>
+    </ul>
+  </nav>
+  <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+  }
+  </script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overla"></div>
+    <div class="content">
+      <h2 data-aos="fade-up" id="tagline">Fresh, Fast & Flavorful!</h2>
+      <p data-aos="fade-down" id="heading">Freshly made fast food delivered hot & delicious! Enjoy burgers, pizza, rolls & more!</p>
+      <a href="menu.html">
+       <button>Explore Menu</button>
+       </a>
+    </div>
+  </section>
+  <!-- Script for Hamburger Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true      
+  });
+</script>
+<!-- chef's recommendation -->
+<section class="chef-section">
+  <div class="chef-container">
+    <!-- Left Image with Badge -->
+    <div class="chef-image" data-aos="fade-up">
+      <span class="badge">Chef's Recommendation</span>
+      <img src="chef-recommmendation.jpg" alt="Chef Recommendation">
+    </div>
+    <!-- Right Text Area -->
+    <div class="chef-details">
+      <h2 data-aos="zoom-in">Today’s Special Picks</h2>
+      <ul>
+        <li data-aos="zoom-in"><strong>Spicy Grilled Chicken</strong> – Perfectly seasoned with a smoky twist and served hot.</li>
+        <li data-aos="zoom-in"><strong>Stuffed Cheese Naan</strong> – Soft, fluffy, and oozing with melting cheese.</li>
+        <li data-aos="zoom-in"><strong>Butter Garlic Prawns</strong> – Tossed in a creamy garlic butter sauce, a must-try!</li>
+        <li data-aos="zoom-in"><strong>Special Masala Fries</strong> – Crispy and spiced with our in-house blend.</li>
+      </ul>
+      <a href="#chef-recommendation"><button class="chef-btn" data-aos="zoom-in">See All Recommendations</button></a>
+    </div>
+  </div>
+</section>
+<!-- menu section -->
+ <section id="chef-recommendation">
+ <h2>Our Delicious Menu</h2>
+  <div class="card-grid">
+    <!-- 🧆 Burgers -->
+    <div class="card"><img src="Zinger Burger.jpg" alt=""><div class="overlay"><h4>Zinger Burger</h4><p class="price">Rs. 500</p><a href="order.html"><a href="order.html"><button>Order Now</button></a></a></div></div>
+    <div class="card"><img src="Grilled Chicken Burger.jpg" alt=""><div class="overlay"><h4>Grilled Chicken Burger</h4><p class="price">Rs. 450</p><a href="order.html"><a href="order.html"><button>Order Now</button></a></a></div></div>
+    <div class="card"><img src="Double Beef Burger.jpg" alt=""><div class="overlay"><h4>Double Beef Burger</h4><p class="price">Rs. 650</p><a href="order.html"><a href="order.html"><button>Order Now</button></a></a></div></div>
+    <div class="card"><img src="Spicy Jalapeno Burger.jpg" alt=""><div class="overlay"><h4>Spicy Jalapeno Burger</h4><p class="price">Rs. 400</p><a href="order.html"><a href="order.html"><button>Order Now</button></a></a></div></div>
+    <div class="card"><img src="BBQ Cheese Burger.jpg" alt=""><div class="overlay"><h4>BBQ Cheese Burger</h4><p class="price">Rs. 700</p><a href="order.html"><a href="order.html"><button>Order Now</button></a></a></div></div>
+
+    <!-- 🌯 Rolls -->
+    <div class="card"><img src="Chicken Mayo Roll.jpg" alt=""><div class="overlay"><h4>Chicken Mayo Roll</h4><p class="price">Rs. 300</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Beef Seekh Roll.jpg" alt=""><div class="overlay"><h4>Beef Seekh Roll</h4><p class="price">Rs. 350</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Malai Boti Roll.jpg" alt=""><div class="overlay"><h4>Malai Boti Roll</h4><p class="price">Rs. 250</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Peri Peri Roll.jpg" alt=""><div class="overlay"><h4>Peri Peri Roll</h4><p class="price">Rs. 300</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="crispy zinger roll.jpg" alt=""><div class="overlay"><h4>Crispy Zinger Roll</h4><p class="price">Rs. 450</p><a href="order.html"><button>Order Now</button></a></div></div>
+
+    <!-- 🍕 Pizza -->
+    <div class="card"><img src="Chicken Fajita Pizza.jpg" alt=""><div class="overlay"><h4>Chicken Fajita Pizza</h4><p class="price">Rs. 1200</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Pepperoni Pizza.jpg" alt=""><div class="overlay"><h4>Pepperoni Pizza</h4><p class="price">Rs. 1000</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Margherita.jpg" alt=""><div class="overlay"><h4>Margherita</h4><p class="price">Rs. 950</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="BBQ Chicken Pizza.jpg" alt=""><div class="overlay"><h4>BBQ Chicken Pizza</h4><p class="price">Rs. 1250</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Cheese Lovers Pizza.jpg" alt=""><div class="overlay"><h4>Cheese Lovers Pizza</h4><p class="price">Rs. 1100</p><a href="order.html"><button>Order Now</button></a></div></div>
+
+    <!-- 🍗 Karhai & Desi -->
+    <div class="card"><img src="Chicken Karhai.jpg" alt=""><div class="overlay"><h4>Chicken Karhai</h4><p class="price">Rs. 1250</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Mutton Karhai.jpg" alt=""><div class="overlay"><h4>Mutton Karhai</h4><p class="price">Rs. 1100</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="White Handi.jpg" alt=""><div class="overlay"><h4>White Handi</h4><p class="price">Rs. 1050</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Chicken Tikka.jpg" alt=""><div class="overlay"><h4>Chicken Tikka</h4><p class="price">Rs. 450</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Biriyani-1.jpg" alt=""><div class="overlay"><h4>Chicken Biryani</h4><p class="price">Rs. 350</p><a href="order.html"><button>Order Now</button></a></div></div>
+
+    <!-- 🍟 Snacks & Sides -->
+    <div class="card"><img src="fries.jpg" alt=""><div class="overlay"><h4>Fries</h4><p class="price">Rs. 200</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Chicken Nuggets.jpg" alt=""><div class="overlay"><h4>Chicken Nuggets</h4><p class="price">Rs. 400</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Mozzarella Sticks.jpg" alt=""><div class="overlay"><h4>Mozzarella Sticks</h4><p class="price">Rs. 600</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Onion Rings.jpg" alt=""><div class="overlay"><h4>Onion Rings</h4><p class="price">Rs. 350</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Garlic Bread.jpg" alt=""><div class="overlay"><h4>Garlic Bread</h4><p class="price">Rs. 300</p><a href="order.html"><button>Order Now</button></a></div></div>
+
+    <!-- 🥤 Drinks -->
+    <div class="card"><img src="drinks.jpg" alt=""><div class="overlay"><h4>Cold Drinks</h4><p class="price">Rs. 350</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Mint Margarita.jpg" alt=""><div class="overlay"><h4>Mint Margarita</h4><p class="price">Rs. 450</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Fresh Juices.jpg" alt=""><div class="overlay"><h4>Fresh Juices</h4><p class="price">Rs. 450</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Iced Tea.jpg" alt=""><div class="overlay"><h4>Iced Tea</h4><p class="price">Rs. 350</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Milkshake.jpg" alt=""><div class="overlay"><h4>Milkshakes</h4><p class="price">Rs. 450</p><a href="order.html"><button>Order Now</button></a></div></div>
+
+    <!-- 🍰 Desserts -->
+    <div class="card"><img src="Chocolate Lava Cake.jpg" alt=""><div class="overlay"><h4>Chocolate Lava Cake</h4><p class="price">Rs. 300</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Brownie with Ice Cream.jpg" alt=""><div class="overlay"><h4>Brownie with Ice Cream</h4><p class="price">Rs. 350</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Oreo Shake.jpg" alt=""><div class="overlay"><h4>Oreo Shake</h4><p class="price">Rs. 250</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Gulab Jamun.jpg" alt=""><div class="overlay"><h4>Gulab Jamun</h4><p class="price">Rs. 250</p><a href="order.html"><button>Order Now</button></a></div></div>
+    <div class="card"><img src="Shahi Tukray.jpg" alt=""><div class="overlay"><h4>Shahi Tukray</h4><p class="price">Rs. 200</p><a href="order.html"><button>Order Now</button></a></div></div>
+  </div>
+  </section>
+  <!-- footer -->
+  <footer class="custom-footer">
+  <div class="footer-columns">
+    <!-- About Section -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-utensils" data-aos="fade-down"></i> About Us</h4>
+    <p data-aos="fade-down">At Foodies Empire, we believe great food brings people together — that’s why we craft every dish with passion, freshness, and a touch of love to give you an unforgettable taste experience.</p>
+    </div>
+    <!-- Foods Info -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-utensils" data-aos="fade-down"></i> Our Specialties</h4>
+    <p data-aos="fade-down">Discover our chef’s handpicked specials — crafted with bold flavors, rich ingredients, and an unforgettable twist in every bite.</p>
+    </div>
+    <!-- Contact -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-phone" data-aos="fade-down"></i> Contact</h4>
+      <p data-aos="fade-down"><strong>Phone:</strong> +1 5589 55488 55</p>
+      <p data-aos="fade-down"><strong>Email:</strong> info@foodiesempire.com</p>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-envelope" data-aos="fade-down"></i> Newsletter</h4>
+      <p data-aos="fade-down">Get exclusive food updates:</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email" required data-aos="fade-down">
+        <button type="submit" data-aos="fade-down">Subscribe</button>
+      </form>
+    </div>
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down">Follow Us</h4>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-instagram" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-twitter" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-youtube" data-aos="fade-down"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom Footer Text -->
+  <div class="footer-bottom">
+    <p>© 2025 <strong>Foodies Empire</strong>. All Rights Reserved.</p>
+    <p>Providing joy through <span>authentic taste</span> and quality service.</p>
+  </div>
+</footer>
+<!-- Fixed Buttons -->
+<div class="fixed-buttons">
+  <a class="whatsapp-btn" href="https://wa.me/923001234567" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+  <button class="back-to-top hide-arrow" id="topBtn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+<script>
+  const topBtn = document.getElementById('topBtn');
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topBtn.classList.remove('hide-arrow');
+    } else {
+      topBtn.classList.add('hide-arrow');
+    }
+  };
+  topBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>

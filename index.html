@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodies Empire</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   <!-- GLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="foods-web-logo.png">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 data-aos="fade-up"><i class="fas fa-utensils" data-aos="fade-down"></i>Foodies Empire</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links"  data-aos="zoom-in">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="order.html">Order Now</a></li>
+    </ul>
+  </nav>
+  <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+  }
+</script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 data-aos="fade-up">Taste That Speaks!</h2>
+      <p data-aos="fade-down" id="heading">Serving you hot, flavorful meals made with love — from burgers to cheesy pizzas, we bring restaurant-quality food to your doors!</p>
+      <a href="menu.html">
+        <button>Explore Menu</button>
+      </a>
+    </div>
+  </section>
+  <!-- Script for Hamburger Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true      
+  });
+</script>
+<!-- products counter -->
+  <section class="stats-section">
+    <div class="stats-heading" data-aos="fade-up">Foods Emperor Hotel Stats</div>
+    <!-- Row 1 -->
+    <div class="counter-row" data-aos="zoom-in">
+      <div class="counter-box">
+        <div class="counter-number" data-target="250">0</div>
+        <div class="counter-label">+ Food Items</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" data-target="200">0</div>
+        <div class="counter-label">+ Waiters</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" data-target="500">0</div>
+        <div class="counter-label">+ Seating Capacity</div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="counter-row" data-aos="zoom-in">
+      <div class="counter-box">
+        <div class="counter-number" data-target="50">0</div>
+        <div class="counter-label">+ Chefs</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" data-target="100">0</div>
+        <div class="counter-label">+ Branch Orders</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" data-target="300">0</div>
+        <div class="counter-label">+ Daily Visitors</div>
+      </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="counter-row" data-aos="zoom-in">
+      <div class="counter-box">
+        <div class="counter-number" data-target="24">0</div>
+        <div class="counter-label">/7 Service</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" data-target="5">0</div>
+        <div class="counter-label">Star Rating</div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-number" data-target="12">0</div>
+        <div class="counter-label">+ Years Experience</div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const counters = document.querySelectorAll('.counter-number');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 300;
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCounter, 50);
+        } else {
+          counter.innerText = target + (target > 10 ? "+" : "");
+        }
+      };
+      updateCounter();
+    });
+  </script>
+<!-- why choose us -->
+  <section class="why-choose-section">
+  <h2 data-aos="fade-up">Why Foodies Love Us 🍽️</h2>
+  <div class="cards-container">
+    <div class="info-card">
+      <div class="icon" data-aos="zoom-in">🍔</div>
+      <h3 data-aos="zoom-in">Premium Ingredients</h3>
+      <p data-aos="zoom-in">Sirf fresh aur top-quality ingredients se tayar kiya gaya khaas khana.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon" data-aos="zoom-in">🕒</div>
+      <h3 data-aos="zoom-in">Quick <br> Delivery</h3>
+      <p data-aos="zoom-in">Hamari lightning-fast service se garam aur tasty khana turant aap tak.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon" data-aos="zoom-in">⭐</div>
+      <h3 data-aos="zoom-in">Customer Satisfaction</h3>
+      <p data-aos="zoom-in">Thousands of customers har bite mein feel karte hain hamara standard.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon" data-aos="zoom-in">👨‍🍳</div>
+      <h3 data-aos="zoom-in">Skilled <br> Chefs</h3>
+      <p data-aos="zoom-in">Passionate aur expert chefs jo har dish ko perfection tak le jate hain.</p>
+    </div>
+  </div>
+</section>
+<!-- gallery section -->
+  <section class="gallery-section">
+    <h2 data-aos="fade-up">Gallery / Food Showcase</h2>
+    <div class="gallery-grid">
+      <!-- Image 1 -->
+      <a href="pizza.jpg" class="glightbox" data-gallery="foods">
+        <img src="pizza.jpg" alt="Pizza" data-aos="zoom-in">
+      </a>
+      <!-- Image 2 -->
+      <a href="burger.jpg" class="glightbox" data-gallery="foods">
+        <img src="burger.jpg" alt="Burger" data-aos="zoom-in">
+      </a>
+      <!-- Image 3 -->
+      <a href="biryani-2.jpg" class="glightbox" data-gallery="foods">
+        <img src="biryani-2.jpg" alt="Biryani" data-aos="zoom-in">
+      </a>
+      <!-- Image 4 -->
+      <a href="desi-food.jpg"class="glightbox" data-gallery="foods">
+        <img src="desi-food.jpg" alt="Desi Food" data-aos="zoom-in">
+      </a>
+      <!-- Image 5 -->
+      <a href="desserts.jpg" class="glightbox" data-gallery="foods">
+        <img src="desserts.jpg" alt="Dessert" data-aos="zoom-in">
+      </a>
+      <!-- Image 6 -->
+      <a href="rolls.jpg" class="glightbox" data-gallery="foods">
+        <img src="rolls.jpg" alt="Roll" data-aos="zoom-in">
+      </a>
+      <!-- Image 7 -->
+      <a href="karahi.jpg" class="glightbox" data-gallery="foods">
+        <img src="karahi.jpg" alt="Karhai" data-aos="zoom-in">
+      </a>
+      <!-- Image 8 -->
+      <a href="drinks.jpg" class="glightbox" data-gallery="foods">
+        <img src="drinks.jpg" alt="Drinks" data-aos="zoom-in">
+      </a>
+    </div>
+  </section>
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
+<!-- blog section -->
+  <section class="blog-section">
+    <h2 data-aos="fade-up">Latest Tips & Offers</h2>
+    <div class="blog-grid">
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <h3 data-aos="zoom-in">🍕 5 Must-Try Foods at Foods Emperor</h3>
+        <p data-aos="zoom-in">Discover our top picks: Emperor Special Pizza, Smoky Karhai, BBQ Rolls & more.</p>
+        <a href="menu.html">Read More →</a>
+      </div>
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <h3 data-aos="zoom-in">🔥 July Special: 20% OFF All Burgers</h3>
+        <p data-aos="zoom-in">All gourmet burgers are 20% off this month. Don’t miss out!</p>
+        <br>
+        <a href="menu.html">View Offer →</a>
+      </div>
+      <!-- Blog Post 3 -->
+      <div class="blog-card">
+        <h3 data-aos="zoom-in">🍨 New Arrival: Emperor's Falooda</h3>
+        <p data-aos="zoom-in">Introducing our chilled royal falooda – the perfect summer treat!</p>
+        <a href="menu.html">Try Now →</a>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="custom-footer">
+  <div class="footer-columns">
+    <!-- About Section -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-utensils" data-aos="fade-down"></i> About Us</h4>
+    <p data-aos="fade-down">At Foodies Empire, we believe great food brings people together — that’s why we craft every dish with passion, freshness, and a touch of love to give you an unforgettable taste experience.</p>
+    </div>
+    <!-- Foods Info -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-utensils" data-aos="fade-down"></i> Our Specialties</h4>
+    <p data-aos="fade-down">Discover our chef’s handpicked specials — crafted with bold flavors, rich ingredients, and an unforgettable twist in every bite.</p>
+    </div>
+    <!-- Contact -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-phone" data-aos="fade-down"></i> Contact</h4>
+      <p data-aos="fade-down"><strong>Phone:</strong> +1 5589 55488 55</p>
+      <p data-aos="fade-down"><strong>Email:</strong> info@foodiesempire.com</p>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down"><i class="fas fa-envelope" data-aos="fade-down"></i> Newsletter</h4>
+      <p data-aos="fade-down">Get exclusive food updates:</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email" required data-aos="fade-down">
+        <button type="submit" data-aos="fade-down">Subscribe</button>
+      </form>
+    </div>
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4 data-aos="fade-down">Follow Us</h4>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-instagram" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-twitter" data-aos="fade-down"></i></a>
+        <a href="#"><i class="fab fa-youtube" data-aos="fade-down"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom Footer Text -->
+  <div class="footer-bottom">
+    <p>© 2025 <strong>Foodies Empire</strong>. All Rights Reserved.</p>
+    <p>Providing joy through <span>authentic taste</span> and quality service.</p>
+  </div>
+</footer>
+<!-- Fixed Buttons -->
+<div class="fixed-buttons">
+  <a class="whatsapp-btn" href="https://wa.me/923001234567" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+  <button class="back-to-top hide-arrow" id="topBtn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+<script>
+  const topBtn = document.getElementById('topBtn');
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topBtn.classList.remove('hide-arrow');
+    } else {
+      topBtn.classList.add('hide-arrow');
+    }
+  };
+  topBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
+
